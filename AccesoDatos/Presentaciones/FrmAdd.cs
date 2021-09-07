@@ -34,7 +34,7 @@ namespace Presentaciones
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (!FrmPrincipal.pr._IdProducto.Equals(""))
+            if (FrmPrincipal.pr._IdProducto==0)
             {
                 MessageBox.Show(p.Guardar(new Producto(FrmPrincipal.pr._IdProducto, txtNombre.Text, txtDescripcion.Text,
                     txtPrecio.Text)));

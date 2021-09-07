@@ -26,7 +26,7 @@ namespace Manejador
 
         public string Editar(Producto producto)
         {
-            return ab.Comando(string.Format("update producto set nombre='{0}', descripcion='{1}', precio='{2}' where IdProducto='{3}'", producto._Nombre,
+            return ab.Comando(string.Format("update producto set nombre='{0}', descripcion='{1}', precio='{2}' where idproducto='{3}'", producto._Nombre,
                 producto._Descripcion, producto._Precio, producto._IdProducto));
         }
 
@@ -36,7 +36,7 @@ namespace Manejador
             DialogResult rs = MessageBox.Show("Está seguro de eliminar " + producto._Nombre, "Atencion!", MessageBoxButtons.YesNo);
             if (rs == DialogResult.Yes)
             {
-                r = ab.Comando(string.Format("delete from producto where IdProducto = {0}", producto._IdProducto));
+                r = ab.Comando(string.Format("delete from producto where idproducto = {0}", producto._IdProducto));
             }
             return r;
         }

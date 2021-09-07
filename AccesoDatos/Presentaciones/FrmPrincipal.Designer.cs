@@ -101,6 +101,7 @@ namespace Presentaciones
             this.dtgDatos.RowTemplate.Height = 33;
             this.dtgDatos.Size = new System.Drawing.Size(848, 347);
             this.dtgDatos.TabIndex = 4;
+            this.dtgDatos.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDatos_CellEnter);
             // 
             // btnSalir
             // 
@@ -121,6 +122,7 @@ namespace Presentaciones
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -147,6 +149,7 @@ namespace Presentaciones
             this.Controls.Add(this.panel1);
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDatos)).EndInit();

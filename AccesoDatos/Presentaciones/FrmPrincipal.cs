@@ -44,5 +44,27 @@ namespace Presentaciones
         {
             p.Mostrar(dtgDatos, txtBuscar.Text);
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+            FrmAdd ad = new FrmAdd();
+            ad.ShowDialog();
+            Actualizar();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            Actualizar();
+        }
+
+        private void dtgDatos_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            i = e.RowIndex;
+            pr._IdProducto = int.Parse(dtgDatos.Rows[i].Cells[0].Value.ToString());
+            pr._Nombre = dtgDatos.Rows[i].Cells[1].Value.ToString();
+            pr._Descripcion = dtgDatos.Rows[i].Cells[2].Value.ToString();
+            pr._Precio = dtgDatos.Rows[i].Cells[3].Value.ToString();
+        }
     }
 }
