@@ -79,6 +79,7 @@ namespace Presentaciones
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(512, 44);
             this.txtBuscar.TabIndex = 2;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // btnAgregar
             // 
@@ -89,6 +90,7 @@ namespace Presentaciones
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "+";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dtgDatos
             // 

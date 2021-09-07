@@ -1,0 +1,6 @@
+C:\Users\Fernando López\source\repos\Tienda\AccesoDatos\Entidad\bin\Debug\Entidad.dll
+C:\Users\Fernando López\source\repos\Tienda\AccesoDatos\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Fernando López\source\repos\Tienda\AccesoDatos\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
+C:\Users\Fernando López\source\repos\Tienda\AccesoDatos\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Fernando López\source\repos\Tienda\AccesoDatos\Entidad\obj\Debug\Entidad.dll
+C:\Users\Fernando López\source\repos\Tienda\AccesoDatos\Entidad\obj\Debug\Entidad.pdb

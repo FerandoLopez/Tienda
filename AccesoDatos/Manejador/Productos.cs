@@ -14,8 +14,8 @@ namespace Manejador
         AccesoBase ab = new AccesoBase("localhost", "root", "berWUHDc", "tienda", 3306);
         public string Guardar(Producto producto)
         {
-            return ab.Comando(string.Format("insert into producto values('{0}','{1}','{2}','{3}')",
-                producto._IdProducto, producto._Nombre, producto._Descripcion, producto._Precio));
+            return ab.Comando(string.Format("insert into producto values(null,'{0}','{1}','{2}')",
+                 producto._Nombre, producto._Descripcion, producto._Precio));
         }
 
         public void Mostrar(DataGridView tabla, string dato)

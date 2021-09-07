@@ -31,11 +31,9 @@ namespace Presentaciones
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
@@ -64,21 +62,11 @@ namespace Presentaciones
             this.label1.TabIndex = 0;
             this.label1.Text = "AGREGAR PRODUCTOS";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 159);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 37);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Id";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 240);
+            this.label3.Location = new System.Drawing.Point(53, 192);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 37);
             this.label3.TabIndex = 3;
@@ -88,7 +76,7 @@ namespace Presentaciones
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(51, 332);
+            this.label4.Location = new System.Drawing.Point(53, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(195, 37);
             this.label4.TabIndex = 4;
@@ -98,24 +86,16 @@ namespace Presentaciones
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 439);
+            this.label5.Location = new System.Drawing.Point(53, 391);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(113, 37);
             this.label5.TabIndex = 5;
             this.label5.Text = "Precio";
             // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(265, 159);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(365, 44);
-            this.txtId.TabIndex = 6;
-            // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(265, 240);
+            this.txtNombre.Location = new System.Drawing.Point(267, 192);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(365, 44);
             this.txtNombre.TabIndex = 7;
@@ -123,7 +103,7 @@ namespace Presentaciones
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(265, 325);
+            this.txtDescripcion.Location = new System.Drawing.Point(267, 277);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(365, 44);
             this.txtDescripcion.TabIndex = 8;
@@ -131,7 +111,7 @@ namespace Presentaciones
             // txtPrecio
             // 
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(265, 432);
+            this.txtPrecio.Location = new System.Drawing.Point(267, 384);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(365, 44);
             this.txtPrecio.TabIndex = 9;
@@ -139,22 +119,24 @@ namespace Presentaciones
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(265, 504);
+            this.btnGuardar.Location = new System.Drawing.Point(267, 456);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(170, 61);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(460, 504);
+            this.btnSalir.Location = new System.Drawing.Point(462, 456);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(170, 61);
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmAdd
             // 
@@ -166,11 +148,9 @@ namespace Presentaciones
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "FrmAdd";
             this.Text = "FrmAdd";
@@ -185,11 +165,9 @@ namespace Presentaciones
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtPrecio;

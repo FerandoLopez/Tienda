@@ -11,9 +11,9 @@ namespace Entidad
         public int _IdProducto { get; set; }
         public string _Nombre { get; set; }
         public string _Descripcion { get; set; }
-        public double _Precio { get; set; }
+        public string _Precio { get; set; }
 
-        public Producto(int idproducto, string nombre, string descripcion, double precio)
+        public Producto(int idproducto, string nombre, string descripcion, string precio)
         {
             _IdProducto = idproducto;
             _Nombre = nombre;
