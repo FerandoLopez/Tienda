@@ -66,5 +66,28 @@ namespace Presentaciones
             pr._Descripcion = dtgDatos.Rows[i].Cells[2].Value.ToString();
             pr._Precio = dtgDatos.Rows[i].Cells[3].Value.ToString();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dtgDatos.RowCount > 0)
+            {
+                string r = p.Borrar(pr);
+                if (string.IsNullOrEmpty(r))
+                {
+                    MessageBox.Show(r);
+                    Actualizar();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe elegir un registro");
+            }
+            Actualizar();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
